@@ -41,6 +41,8 @@
    <sub>🔴 low · trough compared with pre-shock month-to-month variability</sub>
 6. **Inequality and access** — The Gini coefficient of light per capita (ADM2) is 0.39 in 2025 (significant decrease since 2014). About 1.76 million people live in inhabited areas with no detectable light (5% of the inhabited population).  
    <sub>🟠 medium · sensitive to the radiance threshold (from 0.00 to 2.85 M depending on the threshold); a proxy for outdoor lighting, not for grid connection</sub>
+7. **Industrial zones** — 24 candidate industrial zones are detected (2 major hubs, 1 energy sites), covering 60 km². They emit 1% of national light; the largest is Kpone Katamanso (Greater Accra Region). Their light changes by +7.3% per year.  
+   <sub>🔴 low · candidate zones, not validated against OpenStreetMap</sub>
 
 ## 🛰️ Day and night
 
@@ -59,6 +61,23 @@ VIIRS VNL V2 annual composites (gas flares masked), same logarithmic scale: left
 <p align="center"><img src="docs/img/series.png" alt="series" width="100%"></p>
 
 The seasonally adjusted curve removes seasonal effects (snow, vegetation, festivities): read it to judge a rise or a fall.
+
+## 🏭 Industrial zones
+
+<p align="center"><img src="docs/img/industry.png" alt="industry" width="80%"></p>
+
+Industrial sites shine at night like towns, but their buildings are mostly non-residential, few people live there and they emit NO₂. Combining VIIRS, GHSL (non-residential built-up, population) and Sentinel-5P, **24 candidate zones** are detected; they emit **1%** of national light. 
+
+| # | Zone | Type | Area | Share of national light | Growth / yr |
+|---:|---|---|---:|---:|---:|
+| 1 | Kpone Katamanso (Greater Accra Region) | Major industrial hub | 25.3 km² | 0.6% | +7.4% |
+| 2 | Ellembelle (Western Region) | Energy / extraction site | 10.4 km² | 0.2% | +7.4% |
+| 3 | Krowor Municipal (Greater Accra Region) | Major industrial hub | 4.7 km² | 0.2% | +11.5% |
+| 4 | Ablekuma North Municipal (Greater Accra Region) | Industrial / logistics zone | 3.4 km² | 0.1% | +9.2% |
+| 5 | Ayawaso Central Municipal (Greater Accra Region) | Industrial / logistics zone | 1.3 km² | 0.0% | +11.0% |
+| 6 | Old Tafo Municipal (Ashanti Region) | Industrial / logistics zone | 1.1 km² | 0.0% | +11.4% |
+| 7 | Ga East (Greater Accra Region) | Industrial / logistics zone | 0.6 km² | 0.0% | +10.3% |
+| 8 | Prestea/huni Valley (Western Region) | Industrial / logistics zone | 1.5 km² | 0.0% | +6.5% |
 
 ## 🧭 What the dashboard contains
 
@@ -169,4 +188,4 @@ Produced by the **African Development Bank** as part of **Data Innovation for Af
 ---
 
 <p align="center"><sub>© 2026 AfDB-DI4A · Any reuse must cite “Source: AfDB-DI4A”</sub></p>
-<p align="center"><sub>Last update: 2026-10-27 · <a href="#top">↑</a></sub></p>
+<p align="center"><sub>Last update: 2026-11-03 · <a href="#top">↑</a></sub></p>
